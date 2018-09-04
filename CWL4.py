@@ -12,7 +12,7 @@ gen_cFile(prefix)
 from PD_IH import run as PD_IH_run
 
 
-NUM_CORES = multiprocessing.cpu_count()
+NUM_CORES = int(multiprocessing.cpu_count() * 0.8)
 EPSILON = 0.00001
 
 
